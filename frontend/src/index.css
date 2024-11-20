@@ -1,0 +1,48 @@
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #0e0c16;
+  color: #ececec;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-y: scroll; /* Ensure scrollbars appear consistently */
+}
+
+/* Anchor tag default styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Custom scrollbar styles */
+*::-webkit-scrollbar {
+  width: 10px; /* Adjust the width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* Updated to match dark UI design */
+  border-radius: 5px; /* Rounded scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #605e68; /* A neutral dark color for thumb */
+  border-radius: 5px; /* Rounded scrollbar thumb */
+  border: 2px solid #0e0c16; /* Adds spacing around the thumb for a clean look */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #504d57; /* Darker color on hover */
+}
+
+/* Firefox-specific scrollbar styling */
+* {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: #605e68 #1a1a1a; /* Thumb color and track color */
+}
